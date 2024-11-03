@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Omar ALAOUI DAHBI</title>
+    <style>
+        body {
+            background-color: #1E0630;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2B0A3D;
+            padding: 2em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Ensure nav items wrap on smaller screens */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5em;
+            flex-wrap: wrap; /* Wraps the menu items in smaller screens */
+            padding: 0; /* Remove default padding */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover, nav a:focus {
+            color: #F4B000; /* Change color on hover */
+        }
+        #home {
+            margin-top: 1em;
+        }
+        #home h2 {
+            color: #F4B000;
+        }
+        #home h1 {
+            font-size: 2.5em;
+            color: white;
+        }
+        #home img {
+            width: 100%; /* Responsive width */
+            max-width: 400px; /* Max width for larger screens */
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation effect */
+            margin-top: 1em; /* Adds some space above the image */
+        }
+        #home img:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        #projects {
+            padding: 4em 2em;
+            text-align: center;
+        }
+        #projects img {
+            width: 100%; /* Responsive width */
+            max-width: 200px; /* Max width for larger screens */
+            height: auto;
+            margin: 1em;
+            border: 2px solid #F4B000;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        #projects img:hover {
+            transform: scale(1.1);
+        }
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            #home h1 {
+                font-size: 2em; /* Adjust font size for mobile */
+            }
+            nav ul {
+                flex-direction: column; /* Stack nav items on smaller screens */
+                align-items: center; /* Center nav items */
+            }
+        }
+        @media (max-width: 480px) {
+            #home h1 {
+                font-size: 1.5em; /* Further adjust font size for very small screens */
+            }
+            nav a {
+                font-size: 0.9em; /* Adjust nav link size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1 style="color: white;">Omar <span style="color: #F4B000;">ALAOUI DAHBI</span></h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+            <h2>Hello, My name is</h2>
+            <h1>Omar <span style="color: #F4B000;">ALAOUI DAHBI</span>,</h1>
+            <h3>I'm a Graphic designer & Frontend developer.</h3>
+            <img src="WhatsApp Image 2024-11-03 at 20.18.27_11820df3.jpg" alt="Profile Photo"> <!-- Profile Photo -->
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" style="padding: 4em 2em; text-align: center;">
+        <h2>About <span style="color: #F4B000;">Me</span></h2>
+        <p style="max-width: 600px; margin: 1em auto; line-height: 1.6;">
+            Passionate about graphic design and frontend development, I combine creativity and technical skills to create impactful visual experiences...
+        </p>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" style="background-color: #2B0A3D; padding: 4em 2em; text-align: center;">
+        <h2>My <span style="color: #F4B000;">Skills</span></h2>
+        <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap; margin-top: 2em;">
+            <!-- Skill Item -->
+            <div style="text-align: center; width: 120px;">
+                <img src="figma_logo.png" alt="Figma" style="width: 60px; margin-bottom: 0.5em;">
+                <p style="margin: 0; color: #F4B000;">Figma</p>
+                <div style="background-color: #3A1249; border-radius: 5px; overflow: hidden; margin-top: 0.5em;">
+                    <div style="background-color: #F4B000; width: 80%; padding: 0.3em 0;">80%</div>
+                </div>
+            </div>
+            <!-- Skill Item -->
+            <div style="text-align: center; width: 120px;">
+                <img src="blender_logo.png" alt="Blender" style="width: 60px; margin-bottom: 0.5em;">
+                <p style="margin: 0; color: #F4B000;">Blender</p>
+                <div style="background-color: #3A1249; border-radius: 5px; overflow: hidden; margin-top: 0.5em;">
+                    <div style="background-color: #F4B000; width: 70%; padding: 0.3em 0;">70%</div>
+                </div>
+            </div>
+            <!-- Skill Item -->
+            <div style="text-align: center; width: 120px;">
+                <img src="illustrator_logo.png" alt="Adobe Illustrator" style="width: 60px; margin-bottom: 0.5em;">
+                <p style="margin: 0; color: #F4B000;">Illustrator</p>
+                <div style="background-color: #3A1249; border-radius: 5px; overflow: hidden; margin-top: 0.5em;">
+                    <div style="background-color: #F4B000; width: 85%; padding: 0.3em 0;">85%</div>
+                </div>
+            </div>
+            <!-- Skill Item -->
+            <div style="text-align: center; width: 120px;">
+                <img src="photoshop_logo.png" alt="Adobe Photoshop" style="width: 60px; margin-bottom: 0.5em;">
+                <p style="margin: 0; color: #F4B000;">Photoshop</p>
+                <div style="background-color: #3A1249; border-radius: 5px; overflow: hidden; margin-top: 0.5em;">
+                    <div style="background-color: #F4B000; width: 90%; padding: 0.3em 0;">90%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects Section -->
+    <section id="projects">
+        <h2>My <span style="color: #F4B000;">Projects</span></h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+            <img src="project4.jpg" alt="Project 4">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 4em 2em; text-align: center;">
+        <h2>Contact <span style="color: #F4B000;">ME</span></h2>
+        <div>
+            <div style="margin-top: 1em;">
+                <a href="https://wa.me/085773747504" target="_blank" style="margin: 0 10px;">
+                    <img src="WhatsApp.svg.webp" alt="WhatsApp" style="width: 40px; height: 40px;">
+                </a>
+                <a href="https://www.instagram.com/fahrirmdynafauzi/" target="_blank" style="margin: 0 10px;">
+                    <img src="Instagram_logo_2022.svg.webp" alt="Instagram" style="width: 40px; height: 40px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
